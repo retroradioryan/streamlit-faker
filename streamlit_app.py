@@ -47,19 +47,4 @@ with st.expander("Lookup all available Streamlit Faker commands"):
         else:
             st.write(f"- `st_faker.{cmd}`")
 
-    # for cmd in all_commands:
-    #     if cmd.startswith("_") or cmd in (
-    #         "camera_input",
-    #         "snow",
-    #         "balloons",
-    #         "exception",
-    #     ):
-    #         continue
-    #     try:
-    #         st.write(f"`faker.{cmd}()`")
-    #         st_faker = get_streamlit_faker(seed=st.session_state.seed).__getattr__(
-    #             cmd
-    #         )()
-    #     except:
-    #         st.text("(WIP)")
-    #     st.write("---")
+   
